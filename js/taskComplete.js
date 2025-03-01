@@ -10,8 +10,8 @@ document
     );
     const taskHeading = document.getElementById("task-heading1").innerText;
     const newDiv = document.createElement("div");
-    newDiv.classList.add("bg-[#F4F7FF]", "p-3", "rounded-xl");
-    newDiv.innerHTML = `<div class="bg-[#F4F7FF] p-5 rounded-xl">
+    newDiv.classList.add("bg-[#F4F7FF]", "p-4", "rounded-xl");
+    newDiv.innerHTML = `<div class="bg-[#F4F7FF] rounded-xl">
                         <p class="text-gray-700 text-sm">You have Complete The Task ${taskHeading} at ${updateTime()}</p>
                         </div>`;
     taskCompleteHistory.appendChild(newDiv);
@@ -29,8 +29,8 @@ document
     );
     const taskHeading = document.getElementById("task-heading2").innerText;
     const newDiv = document.createElement("div");
-    newDiv.classList.add("bg-[#F4F7FF]", "p-3", "rounded-xl");
-    newDiv.innerHTML = `<div class="bg-[#F4F7FF] p-5 rounded-xl">
+    newDiv.classList.add("bg-[#F4F7FF]", "p-4", "rounded-xl");
+    newDiv.innerHTML = `<div class="bg-[#F4F7FF] rounded-xl">
                         <p class="text-gray-700 text-sm">You have Complete The Task ${taskHeading} at ${updateTime()}</p>
                         </div>`;
     taskCompleteHistory.appendChild(newDiv);
@@ -48,8 +48,8 @@ document
     );
     const taskHeading = document.getElementById("task-heading3").innerText;
     const newDiv = document.createElement("div");
-    newDiv.classList.add("bg-[#F4F7FF]", "p-3", "rounded-xl");
-    newDiv.innerHTML = `<div class="bg-[#F4F7FF] p-5 rounded-xl">
+    newDiv.classList.add("bg-[#F4F7FF]", "p-4", "rounded-xl");
+    newDiv.innerHTML = `<div class="bg-[#F4F7FF] rounded-xl">
                         <p class="text-gray-700 text-sm">You have Complete The Task ${taskHeading} at ${updateTime()}</p>
                         </div>`;
     taskCompleteHistory.appendChild(newDiv);
@@ -67,8 +67,8 @@ document
     );
     const taskHeading = document.getElementById("task-heading4").innerText;
     const newDiv = document.createElement("div");
-    newDiv.classList.add("bg-[#F4F7FF]", "p-3", "rounded-xl");
-    newDiv.innerHTML = `<div class="bg-[#F4F7FF] p-5 rounded-xl">
+    newDiv.classList.add("bg-[#F4F7FF]", "p-4", "rounded-xl");
+    newDiv.innerHTML = `<div class="bg-[#F4F7FF] rounded-xl">
                         <p class="text-gray-700 text-sm">You have Complete The Task ${taskHeading} at ${updateTime()}</p>
                         </div>`;
     taskCompleteHistory.appendChild(newDiv);
@@ -86,8 +86,8 @@ document
     );
     const taskHeading = document.getElementById("task-heading5").innerText;
     const newDiv = document.createElement("div");
-    newDiv.classList.add("bg-[#F4F7FF]", "p-3", "rounded-xl");
-    newDiv.innerHTML = `<div class="bg-[#F4F7FF] p-5 rounded-xl">
+    newDiv.classList.add("bg-[#F4F7FF]", "p-4", "rounded-xl");
+    newDiv.innerHTML = `<div class="bg-[#F4F7FF] rounded-xl">
                         <p class="text-gray-700 text-sm">You have Complete The Task ${taskHeading} at ${updateTime()}</p>
                         </div>`;
     taskCompleteHistory.appendChild(newDiv);
@@ -105,9 +105,11 @@ document
     );
     const taskHeading = document.getElementById("task-heading6").innerText;
     const newDiv = document.createElement("div");
-    newDiv.classList.add("bg-[#F4F7FF]", "p-3", "rounded-xl");
-    newDiv.innerHTML = `<div class="bg-[#F4F7FF] p-5 rounded-xl">
-                        <p class="text-gray-700 text-sm">You have Complete The Task ${taskHeading} at ${updateTime()}</p>
-                        </div>`;
+    newDiv.classList.add("bg-[#F4F7FF]", "p-4", "rounded-xl");
+    newDiv.innerHTML = `<p class="text-gray-700 text-sm">
+    You have Complete The Task 
+    ${taskHeading} 
+    at 
+    ${updateTime()}</p>`;
     taskCompleteHistory.appendChild(newDiv);
   });
