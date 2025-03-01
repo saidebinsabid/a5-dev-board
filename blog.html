@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme ="light">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -49,28 +49,93 @@
         </section>
     </header>
     <main>
-        <section class="mx-auto w-11/12 mt-24">
+        <section class="mx-auto w-11/12 my-16">
 
-            <div>
+            <div class="space-y-8">
                 <!-- Question 1 div -->
                 <div class="bg-white shadow-lg p-3 rounded-lg">
-                    <h1 class="font-bold text-xl pb-8">Question-1: What are the different ways to select an element in the DOM?</h1>
+                    <h1 class="font-bold text-xl pb-8">Question-1: What are the different ways to select an element in
+                        the DOM?</h1>
                     <hr class="border-2 border-dashed border-indigo-100">
-                    <p class="pt-8">There are five different way to select an element in the DOM such as, when you know the element has a unique id try to user <code>getElementById('')</code> because it's fast and simple, 
-                        when you want to select multiple elements with the same class <code>getElementsByClassName('')</code>, 
-                        when you want to select all elements of a specific type (all div elements)<code>getElementsByTagName('')</code>, 
-                        when you want to select a single element using a CSS selector (#id, .class, div > p)<code>querySelector('')</code>, and
-                        when you want to select multiple elements using a CSS selector<code>querySelectorAll(' ')</code>.</p>
+                    <p class="pt-8">There are five different way to select an element in the DOM such as,
+                        when we know the element has a unique id to use <b><code>getElementById('')</code></b> because
+                        it's
+                        fast and simple,
+                        when we want to select multiple elements with the same class to use
+                        <b><code>getElementsByClassName('')</code></b>,
+                        when we want to select all elements of a specific type <b><i>(all div elements)</i></b> to use
+                        <b><code>getElementsByTagName('')</code></b>,
+                        when we want to select a single element using a CSS selector <b><i>(#id, .class, div >
+                                p)</i></b> to
+                        use <b><code>querySelector('')</code></b>, and
+                        when we want to select multiple elements using a CSS selector to use
+                        <b><code>querySelectorAll(' ')</code></b>.
+                    </p>
                 </div>
-                 <!-- Question 2 div -->
-                 <div class="bg-white shadow-lg p-3 rounded-lg">
-                    <h1 class="font-bold text-xl pb-8">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                <!-- Question 2 div -->
+                <div class="bg-white shadow-lg p-3 rounded-lg">
+                    <h1 class="font-bold text-xl pb-8">Question-2: What is the difference between innerHTML, innerText,
+                        and textContent ?</h1>
                     <hr class="border-2 border-dashed border-indigo-100">
-                    <p class="pt-8">There are five different way to select an element in the DOM such as, when you know the element has a unique id try to user <code>getElementById('')</code> because it's fast and simple, 
-                        when you want to select multiple elements with the same class <code>getElementsByClassName('')</code>, 
-                        when you want to select all elements of a specific type (all div elements)<code>getElementsByTagName('')</code>, 
-                        when you want to select a single element using a CSS selector (#id, .class, div > p)<code>querySelector('')</code>, and
-                        when you want to select multiple elements using a CSS selector<code>querySelectorAll(' ')</code>.</p>
+                    <p class="pt-8">
+                        When we want to get or set the <b>HTML content</b> inside an element to use
+                        <b><code>element.innerHTML = ' '</code></b>,
+                        When we want to get or set the <b>visible text</b> inside an element to use
+                        <b><code>element.innerText = ' '</code></b>,
+                        When we want to get or set the <b>entire text</b> inside an element, including hidden text to
+                        use <b><code>element.textContent = ' '</code></b>
+
+                    </p>
+                </div>
+                <!-- Question 3 div -->
+                <div class="bg-white shadow-lg p-3 rounded-lg">
+                    <h1 class="font-bold text-xl pb-8"> Question-3: What is event delegation in the DOM?</h1>
+                    <hr class="border-2 border-dashed border-indigo-100">
+                    <p class="pt-8">
+                        <b>Event delegation</b> is a technique in <b>Javascript</b> where we add an event listener to a
+                        parent element instead of adding it to multiple child elements. <i>Example :</i>
+                        <b><code>document.getElementById('parent').addEventListener('click', function(event) {
+                            if (event.target.tagName === 'BUTTON') {
+                              console.log('Button clicked:', event.target.textContent);
+                            }
+                          })</code></b>
+
+                    </p>
+                </div>
+                <!-- Question 4 div -->
+                <div class="bg-white shadow-lg p-3 rounded-lg">
+                    <h1 class="font-bold text-xl pb-8"> Question-4: What is event bubbling in the DOM?</h1>
+                    <hr class="border-2 border-dashed border-indigo-100">
+                    <p class="pt-8">
+                        <b>Event bubbling</b> means that when an event happens on a <i>child element</i>, it <b>bubbles
+                            up</b> to its parent and then to higher ancestors. For example, clicking a button inside a
+                        div will trigger the button's event first, then the div's event, and so on. <i>Example :</i>
+                        <b><code>document.getElementById('child').addEventListener('click', () => {
+                            console.log('Child clicked')})</code></b>,
+                        <b><code>document.getElementById('parent').addEventListener('click', () => {
+                            console.log('Parent clicked') })</code></b>
+
+                    </p>
+                </div>
+                <!-- Question 5 div -->
+                <div class="bg-white shadow-lg p-3 rounded-lg">
+                    <h1 class="font-bold text-xl pb-8">Question-5: How do you create, add, and remove elements using
+                        JavaScript?</h1>
+                    <hr class="border-2 border-dashed border-indigo-100">
+                    <p class="pt-8">
+                        When we want to create an element to use
+                        <b><code>const newElement = document.createElement('div'); newElement.textContent = 'Hello World';</code></b>,
+
+                        When we want to Add an element to use
+                        <b><code>document.body.appendChild(newElement);</code></b>,
+
+                        When we want to Add it before another element to use
+                        <b><code>const reference = document.getElementById('myElement'); document.body.insertBefore(newElement, reference);</code></b>,
+
+                        When we want to Remove an element to use
+                        <b><code>const element = document.getElementById('myElement'); element.remove();</code></b>
+
+                    </p>
                 </div>
             </div>
         </section>
