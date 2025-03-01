@@ -33,7 +33,7 @@
   </script>
 </head>
 
-<body class="font-poppinsFont">
+<body id="main-body" class="font-poppinsFont">
   <header>
     <section class="mx-auto w-11/12">
       <div class="navbar bg-[#FFFFFF] rounded-xl shadow-md p-5">
@@ -46,7 +46,7 @@
             <img class="w-6 h-6 my-auto" src="assets/checkbox.png" alt="">
             <h1 class="font-bold text-xl my-auto ml-3">23</h1>
           </div>
-          <div class="bg-[#F4F7FF] p-2 rounded-full">
+          <div id="theme-btn" class="bg-[#F4F7FF] p-2 rounded-full cursor-pointer">
             <img class="w-8 h-8" src="assets/theme-btn.png" alt="">
           </div>
         </div>
@@ -64,12 +64,12 @@
             <img class="w-12 h-12 mr-4 bg-white rounded-full p-3" src="assets/checkbox.png" alt="">
             <div>
               <h1 class="text-sm text-cyan-900">Task Assigned</h1>
-              <h2 class="font-semibold text-2xl">05</h2>
+              <h2 class="font-semibold text-2xl">06</h2>
             </div>
           </div>
 
           <!-- Top Left Section Card-2 -->
-          <div class="col-span-12  lg:col-span-6  bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex my-auto rounded-lg shadow-sm lg:p-3 2xl:p-8 ">
+          <div id="discover-new" class="cursor-pointer col-span-12  lg:col-span-6  bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex my-auto rounded-lg shadow-sm lg:p-3 2xl:p-8 ">
             <img class="h-16 w-16" src="assets/board.png" alt="">
             <h1 class="text-2xl text-white ml-5">Discover Something <br> New Today!</h1>
           </div>
@@ -77,9 +77,7 @@
           <!-- Top Left Section Card-3 -->
           <div class="col-span-12  lg:col-span-3 bg-[#F4F7FF] rounded-lg shadow-sm lg:p-3 2xl:p-8 flex my-auto">
             <img class="w-12 h-12 mr-4 bg-white rounded-full p-3" src="assets/calender.png" alt="">
-            <div>
-              <h1 class="text-lg">Wed , <br>
-                <span class="font-bold "> Jul 28 2025</span>
+            <div id="update-week-date">
               </h1>
             </div>
           </div>
@@ -167,6 +165,9 @@
       </div>
     </section>
   </main>
+  <script src="utilities/utilitie.js"></script>
+  <script src="js/toggol.js"></script>
+  <script src="js/dateSection.js"></script>
 </body>
 
 </html>
