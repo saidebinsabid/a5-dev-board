@@ -94,11 +94,11 @@
                     <p class="pt-8 text-gray-600">
                         <b>Event delegation</b> is a technique in <b>Javascript</b> where we add an event listener to a
                         parent element instead of adding it to multiple child elements. <i>Example :</i>
-                        <b><code>document.getElementById('parent').addEventListener('click', function(event) {
-                            if (event.target.tagName === 'BUTTON') {
-                              console.log('Button clicked:', event.target.textContent);
-                            }
-                          })</code></b>
+                        <b>
+                            <code>document.getElementById('parent').</code>
+                            <code>addEventListener('click', function(event) {</code>
+                            <code>if (event.target.tagName === 'BUTTON') {</code>
+                            <code>console.log('Button clicked:', event.target.textContent);}})</code></b>
 
                     </p>
                 </div>
@@ -110,10 +110,16 @@
                         <b>Event bubbling</b> means that when an event happens on a <i>child element</i>, it <b>bubbles
                             up</b> to its parent and then to higher ancestors. For example, clicking a button inside a
                         div will trigger the button's event first, then the div's event, and so on. <i>Example :</i>
-                        <b><code>document.getElementById('child').addEventListener('click', () => {
-                            console.log('Child clicked')})</code></b>,
-                        <b><code>document.getElementById('parent').addEventListener('click', () => {
-                            console.log('Parent clicked') })</code></b>
+                        <b>
+                            <code>document.getElementById('child').</code>
+                            <code> addEventListener('click', () => {</code>
+                            <code>console.log('Child clicked')})</code>
+                        </b>,
+                        <b>
+                            <code>document.getElementById('parent').</code>
+                            <code></code>addEventListener('click', () => {</code>
+                            <code>console.log('Parent clicked') })</code>
+                        </b>
 
                     </p>
                 </div>
