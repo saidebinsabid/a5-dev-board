@@ -10,7 +10,7 @@ document
       "#62929e",
       "#c2dfe3",
       "#ccdbfd",
-      "#FFFFFF",
+      "#7b2cbf",
     ];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     body.style.backgroundColor = randomColor;
